@@ -5,7 +5,8 @@ clicker game in vanilla JavaScript.
 
 ## Usage
 
-Open the `index.html` file in your browser.
+Run `./serve.sh`, and if the web browser doesn't open automatically, open
+`http://localhost:5150` in your browser.
 
 ## Recommendation
 
