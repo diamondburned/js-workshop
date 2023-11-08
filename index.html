@@ -1,0 +1,47 @@
+<!doctype html>
+<title>Cookie Clicker</title>
+<link rel="icon" href="assets/cookie.webp" />
+<link rel="stylesheet" href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+/>
+<link rel="stylesheet" href="style.css" />
+
+<main>
+  <header>
+    <h1>Cookie Clicker!</h1>
+  </header>
+  <div id="cookie-box">
+    <button id="cookie">
+      <img alt="Cookie" src="assets/cookie.webp" />
+    </button>
+    <p class="info">
+      <span id="counter">0</span> cookies
+      <br />
+      <span id="cps">0</span> cookies/sec
+      <br />
+      <span id="cpc">1</span> cookies/click
+    </p>
+  </div>
+  <div id="upgrades-box">
+    <h2>Upgrades</h2>
+    <button id="auto-clicker-1">
+      <h4>Auto-clicker I</h4>
+      <span>+1 cookie per second</span>
+      <span>Cost: <span class="cost">10</span></span>
+    </button>
+    <button id="auto-clicker-2">
+      <h4>Auto-clicker II</h4>
+      <span>+10 cookies per second</span>
+      <span>Cost: <span class="cost">50</span></span>
+    </button>
+    <button id="better-cookies">
+      <h4>Better Cookies</h4>
+      <span>+5 cookies per click</span>
+      <span>Cost: <span class="cost">25</span></span>
+    </button>
+  </div>
+</main>
+
+<script src="cookie-clicker.js" type="module"></script>
