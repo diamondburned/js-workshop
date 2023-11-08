@@ -2,12 +2,14 @@ run = "./serve.sh"
 hidden = [ "deno.json", ".git", "shell.nix", ".prettierignore" ]
 
 [nix]
-  channel = "unstable"
+ channel = "unstable"
 
-[languages]
+[languages.javascript]
+ pattern = "**/*.{ts,js}"
 
-  [languages.javascript]
-    pattern = "**/{*.js}"
+ [languages.javascript.languageServer]
+  start = ["deno", "lsp"]
 
-    [languages.javascript.languageServer]
-      start = "deno lsp"
+  [languages.javascript.languageServer.initializationOptions]
+   enable = true
+   lint = true
