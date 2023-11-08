@@ -13,7 +13,7 @@ main {
   grid-template-areas:
     "header header"
     "cookie upgrades";
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 400px;
   grid-template-rows: auto 1fr;
   grid-gap: 2em;
 }
@@ -26,6 +26,7 @@ main {
       "upgrades";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
+    font-size: 0.85em;
   }
 }
 
@@ -34,6 +35,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+button {
+  font-size: revert;
 }
 
 #cookie-box {
@@ -61,20 +70,24 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 100%;
-  max-width: 400px;
 }
 
 #upgrades-box h2 {
   margin-bottom: 0;
+  margin-top: -2.25em;
+  font-size: 1em;
+  position: absolute;
 }
 
 #upgrades-box button {
   display: flex;
   flex-direction: column;
-  font-size: 0.9em;
   text-align: left;
   padding: 0.5em 1em;
+}
+
+#upgrades-box button span {
+  font-size: 0.85em;
 }
 
 @keyframes cookie-shake {
